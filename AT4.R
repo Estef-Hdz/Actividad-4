@@ -88,6 +88,13 @@ moda <- function(x) {
 moda_resultado <- moda(salarios_mujeres$Edad)
 print(paste("Moda: ", moda_resultado))
 
+# Verificar el tipo actual de la columna
+str(salarios_mujeres$Edad)
+
+salarios_mujeres$Edad <- as.numeric(as.character(salarios_mujeres$Edad))
+
+str(salarios_mujeres$Edad)
+
 #Histograma
 #ver la distribución 
 
